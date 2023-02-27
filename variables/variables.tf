@@ -16,3 +16,30 @@ variable "cli" {} # we can send data to variable from command line(CLI)
 output "sample3"{
   value = var.cli
 }
+
+#we can take inputs from shell environment variable by export TF_VAR_cli="message u want to pass"
+
+variable "sample4"{
+  default = "class" #key=value
+}
+
+variable "sample5"{
+  default = [
+    "rama",
+    "ctha",
+    100,
+    200
+  ]
+}
+
+variable "sample6"{
+  default = {
+    string = "string",
+    number = 100,
+    boolean = true
+  }
+}
+
+output "types"{
+  value = "${var.sample5[0]} attended ${var.sample4} 0f ${var.sample6["number"]}"
+}
