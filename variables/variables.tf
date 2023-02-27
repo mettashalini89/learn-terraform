@@ -11,3 +11,8 @@ variable "example1"{} # we should not hardcode the data directly so we used tfva
 output "sample2"{
   value = var.example1
 }
+
+variable "cli" {} # we can send data to variable from command line(CLI)
+output "sample3"{
+  value = var.cli
+}
