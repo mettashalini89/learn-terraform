@@ -24,7 +24,7 @@ variable "sample4"{
 }
 
 variable "sample5"{
-  default = [
+  default = [       #Key=values list form
     "rama",
     "ctha",
     100,
@@ -33,7 +33,7 @@ variable "sample5"{
 }
 
 variable "sample6"{
-  default = {
+  default = {                  #key = {key=value}
     string = "string",
     number = 100,
     boolean = true
