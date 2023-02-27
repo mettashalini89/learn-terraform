@@ -1,3 +1,1 @@
-variable "example1"{
-  default = "hello example1"
-}
+example1 = "hello example1"
