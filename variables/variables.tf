@@ -16,24 +16,8 @@ variable "cli" {} # we can send data to variable from command line(CLI)
 output "sample3"{
   value = var.cli
 }
-
-#we can take inputs from shell environment variable by export TF_VAR_cli="message u want to pass"
-
-variable "sample4"{
-  default = "class" #key=value
-}
-
-variable "sample5"{
-  default = [       #Key=values list form
-    "rama",
-    "ctha",
-    100,
-    200
-  ]
-}
-
-variable "sample6"{
-  default = {                  #key = {key=value}
+*-
++-alled map
     string = "string",
     number = 100,
     boolean = true
@@ -43,3 +27,7 @@ variable "sample6"{
 output "types"{
   value = "${var.sample5[0]} attended ${var.sample4} 0f ${var.sample6["number"]}"
 }
+
+3./gf]
+Fer]=54
+cv
