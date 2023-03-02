@@ -16,8 +16,9 @@ variable "cli" {} # we can send data to variable from command line(CLI)
 output "sample3"{
   value = var.cli
 }
-*-
-+-alled map
+
+variable "types"{
+  default = {
     string = "string",
     number = 100,
     boolean = true
