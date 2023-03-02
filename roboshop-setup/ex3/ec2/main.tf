@@ -23,3 +23,4 @@ resource "aws_route53_record" "frontend" {
 
 variable "component" {}
 variable "instance_type" {}
+variable "sq_id"{}

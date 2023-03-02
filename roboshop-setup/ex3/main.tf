@@ -3,9 +3,10 @@ module "ec2" {
   source = "./ec2"
   component = each.value["name"]
   instance_type = each.value["type"]
+  sq_id = module.sq.sq_id  #added sq module output as input tp ec2 module
 }
 
-module "sq" {
+module "sq" {      #module declaration
   source = "./sq"
 }
 
