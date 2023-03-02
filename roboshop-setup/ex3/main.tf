@@ -5,6 +5,10 @@ module "ec2" {
   instance_type = each.value["type"]
 }
 
+module "sq" {
+  source = "./sq"
+}
+
 variable "instances" {
   default = {
     frontend = {
