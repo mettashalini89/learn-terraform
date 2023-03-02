@@ -29,9 +29,6 @@ output "types"{
   value = "${var.sample5[0]} attended ${var.sample4} 0f ${var.sample6["number"]}"
 }
 
-3./gf]
-Fer]=54
-cv
 
 # mutiple sets of key value pairs in list
 
