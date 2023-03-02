@@ -31,3 +31,24 @@ output "types"{
 3./gf]
 Fer]=54
 cv
+
+# mutiple sets of key value pairs in list
+
+variable "d1" {
+        default = [
+                {
+                    course_name = "devops"
+                    tutor       = "Raghu"
+                },
+                {
+                     course_name = "aws"
+                     tutor       = "Raghu"
+
+                }
+
+        ]
+}
+
+output "course_name" {
+        value = var.d1.*.course_name
+}
