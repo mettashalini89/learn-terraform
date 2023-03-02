@@ -17,7 +17,7 @@ output "sample3"{
   value = var.cli
 }
 
-variable "types"{
+variable "sample6"{
   default = {
     string = "string",
     number = 100,
@@ -26,7 +26,7 @@ variable "types"{
 }
 
 output "types"{
-  value = "${var.sample5[0]} attended ${var.sample4} 0f ${var.sample6["number"]}"
+  value = "attended  0f ${var.sample6["number"]}"
 }
 
 
