@@ -1,0 +1,1 @@
+resource "null_resource" "nothing" {} #NULL RESOURCE DOES NOTHING
