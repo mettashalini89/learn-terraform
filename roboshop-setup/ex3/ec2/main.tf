@@ -7,7 +7,7 @@ data "aws_ami" "ami" {
 resource "aws_instance" "ec2"{  #first lable is from terraform and second lable is any can be given by user for his ref
   ami = "ami-0a017d8ceb274537d"
   instance_type = var.instance_type
-  vpc_security_group_ids = ["sg-043fd9cc9443cbb75"]
+  vpc_security_group_ids = [var.sq_id]
   tags = {
     Name = var.component
   }
