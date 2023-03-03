@@ -1,4 +1,4 @@
-resource "aws_route53_record" "frontend" {
+resource "aws_route53_record" "ec2" {
   zone_id = "Z02543141QBSJJNNYEJL"
   name    = "${var.component}-dev.devopsb71.live"
   type    = "A"
