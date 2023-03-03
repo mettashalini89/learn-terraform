@@ -5,19 +5,19 @@ resource "aws_instance" "ec2" {
   tags = {
     Name = "test"
   }
-}
 
-provisioner  "remote-exec" { #provisioners are used after resource creation to do some tasks on resource
+ provisioner  "remote-exec" {
+   #provisioners are used after resource creation to do some tasks on resource
 
-  connection {
-    host = self.public_ip
-    user = "root"
-    password = "DevOps321"
-  }
+   connection {
+     host     = self.public_ip
+     user     = "root"
+     password = "DevOps321"
+   }
 
-  inline = [
-    "echo hello world"
-  ]
-
+   inline = [
+     "echo hello world"
+   ]
+ }
 }
 
