@@ -17,6 +17,6 @@ variable "component" {}
 variable "instance_type" {}
 variable "sq_id"{}
 
-output 'private_ip'{
+output "private_ip"{
   value = aws_instance.ec2.private_ip
 }
